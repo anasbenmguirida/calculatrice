@@ -1,12 +1,12 @@
 // we need a function to write /append the op
-let res = document.getElementById("result");
-function append(input) {
+const res = document.getElementById("result");
+function _append(input) {
   res.value += input;
 }
-function clearScreen() {
+function _clearScreen() {
   res.value = "";
 }
-function calculer() {
+function _calculer() {
   try {
     res.value = eval(res.value);
   } catch {
